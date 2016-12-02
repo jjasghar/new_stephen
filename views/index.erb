@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Is Stephen Colbert new tonight?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">Is The Late Show with Stephen Colbert new tonight?</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <p class="text-center">
+        <% if :next_colbert %>
+          <h1>The next episode is new!</h1>
+        <% else %>
+          <h2>Nope, doesn't look like it.</h2>
+        <% end %>
+      </p>
+    </div> <!-- /container -->
+  </body>
+</html>
