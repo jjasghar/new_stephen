@@ -28,11 +28,12 @@
       <br>
       <br>
       <p class="text-center">
-        <% if :next_colbert %>
-          <h1>The next episode is new!</h1>
+        <% if :new_colbert %>
+          <h1>The next episode is new!</h1><br>
         <% else %>
-          <h2>Nope, doesn't look like it.</h2>
+          <h2>Nope, doesn't look like it.</h2><br>
         <% end %>
+        The original date of this episode was/is: <%= original_airdate %>
       </p>
     </div> <!-- /container -->
   </body>
